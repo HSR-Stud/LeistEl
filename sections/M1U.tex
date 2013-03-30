@@ -1,0 +1,11 @@
+\section{Ungesteuerter Gleichrichter M1U}
+\begin{tabular}{ll}
+  Mittelwert &\ $U_{R AV} = \frac{1}{T}\int_{0}^{T}u_{R}(t)dt = \frac{1}{2\pi}\int_{0}^{\pi}U_{2m} \cdot sin(\alpha)d\alpha, \alpha = \omega t$\\
+  &\ $U_{R AV} = -\frac{U_{2m}}{2\pi}(cos(\pi)-cos(0))= \frac{U_{2m}}{\pi}$\\
+  bei f = 50 Hz&\ $U_{R AV} = \frac{1}{20 ms}\int_{0}^{10 ms}u_{R}(t)dt, T = \frac{1}{f}$\\\\
+  Effektivwert &\ $U_{R RMS} = \sqrt{\frac{1}{T}\int_{0}^{T}u_{R}^2 \cdot dt} = \sqrt{\frac{1}{2\pi}\int_{0}^{\pi}U_{2m}^2 \cdot sin(\alpha)^2 \cdot d\alpha}$\\
+  allgemein &\ $\int_{0}^{\pi}sin(\alpha)^2 \cdot d\alpha = \frac{\pi}{2}$\\
+  bei f = 50 Hz &\ $U_{R RMS} = \sqrt{\frac{1}{20 ms}\int_{0}^{10 ms}u_{R}^2 \cdot dt}$\\\\
+  Laststrom &\ $i_{R}(t) = \frac{u_{R}(t)}{R}$\\
+  Wirkleistung &\ $P = \frac{1}{2\pi}\int_{0}^{\pi}\frac{u_{R}^2(\alpha)}{R} \cdot d\alpha = \frac{U_{R RMS}^2}{R} = \frac{U_{2m}^2}{4R}$
+\end{tabular}
