@@ -2,10 +2,10 @@
 B2C als Beispiel:\\\\
 in einem ersten Schritt muss der Strom durch den Thyristor berechnet werden:\\
 \begin{tabular}{ll}
-  &\ $I_{Rm} = \frac{U_{2m}}{R}$\\\\
-  Mittelwert des Thyristorstroms &\ $I_{T AV} = \frac{1}{2\pi}\int_{\alpha}^{\pi}I_{Rm} \cdot sin(\beta) \cdot d\beta, \beta = \omega t$\\
+  Spitzenwert des Thyristorstromes&\ $I_{Rm} = \frac{U_{2m}}{R}$\\\\
+  Mittelwert des Thyristorstromes &\ $I_{T AV} = \frac{1}{2\pi}\int\limits_{\alpha}^{\pi}I_{Rm} \cdot sin(\beta) \cdot d\beta, \beta = \omega t$\\
   &\ $I_{T AV} = \frac{I_{Rm}}{2\pi} \cdot (1+cos\alpha)$\\\\
-  Effektivwert des Thyristorstroms &\ $I_{T RMS} = \sqrt{\frac{I_{RM}^2}{2\pi}\int_{\alpha}^{\pi}sin^2(\beta)d\beta}$\\
+  Effektivwert des Thyristorstromes &\ $I_{T RMS} = \sqrt{\frac{I_{RM}^2}{2\pi}\int\limits_{\alpha}^{\pi}sin^2(\beta)d\beta}$\\
   &\ $I_{T RMS} = \frac{I_{Rm}}{2}\sqrt{\frac{\pi - \alpha}{\pi}+\frac{sin2\alpha}{2\pi}}$\\\\
 \end{tabular}
 
@@ -28,13 +28,13 @@ in einem ersten Schritt muss der Strom durch den Thyristor berechnet werden:\\
 
 momentane Verlustleistung: $p(t) = u_{T}(t) \cdot i_{T}(t)$\\
 \begin{tabular}{ll}
-  Mittelwert der Verlustleistung: &\ $P_{T} = \frac{1}{T}\int_{0}^{T}u_{T}(t) \cdot i_{T}(t) \cdot dt$\\
-  &\ $P_{T} = U_{T0} \cdot \frac{1}{T}\int_{0}^{T}i_{T}(t)dt+r_{T} \cdot \frac{1}{T}\int_{0}^{T}i_{T}^2(t)dt$\\\\
+  Mittelwert der Verlustleistung: &\ $P_{T} = \frac{1}{T}\int\limits_{0}^{T}u_{T}(t) \cdot i_{T}(t) \cdot dt$\\
+  &\ $P_{T} = U_{T0} \cdot \frac{1}{T}\int\limits_{0}^{T}i_{T}(t)dt+r_{T} \cdot \frac{1}{T}\int\limits_{0}^{T}i_{T}^2(t)dt$\\\\
   &\ $P_{T} = U_{T0} \cdot I_{T AV} + r_{T} \cdot I_{T RMS}^2$\\
   &\ $I_{T AV}$ ist der Mittelwert und $I_{T RMS}$ der\\ &\ Effektivwert des Thyristorstroms\\
 \end{tabular}
 
-\textbf{Die Werte für $U_{T0}$ können aus dem Datenblatt des Thyristors herausgelesen werden.}\\\\\\
+\textbf{Der Wert für $U_{T0}$ kann aus dem Datenblatt des Thyristors herausgelesen werden.}\\\\\\
 \begin{tabular}{|l|l|}
   \hline
   \textbf{Thermische Kenngrössen} &\ \textbf{Elektrische Kenngrössen}\\

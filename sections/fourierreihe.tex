@@ -22,13 +22,14 @@ $$f(t) = \frac{a_{0}}{2}+\sum_{n = 1}^{\infty} (a_{n} \cdot cos(n \omega t)+ b_{
 
 Die Koeffizienten der Entwicklung von $f(t)$ sind:\\
 \begin{tabular}{ll}
-  $a_{n} = \frac{2}{T}\int_{0}^{T}f(t) \cdot cos(n \omega t)dt$   &\ $(n = 0,1,2,...)$\\
-  $b_{n} = \frac{2}{T}\int_{0}^{T}f(t) \cdot sin(n \omega t)dt$   &\ $(n = 1,2,3,...)$\\
+  $a_{0} = \frac{2}{T}\int\limits_{0}^{T}f(t)dt$ & \\
+  $a_{n} = \frac{2}{T}\int\limits_{0}^{T}f(t) \cdot cos(n \omega t)dt$   &\ $(n = 0,1,2,...)$\\
+  $b_{n} = \frac{2}{T}\int\limits_{0}^{T}f(t) \cdot sin(n \omega t)dt$   &\ $(n = 1,2,3,...)$\\
 \end{tabular}
 \subsection{Sätze zur Berechnung der Fourierkoeffizienten}
 \subsubsection{Symmetrie}
 \begin{tabular}{ll}
-  Falls $f(t)$ gerade ist $(f(t) = f(-t))$: &\ $\rightarrow b_{n} = 0, a_{n} = \frac{4}{T}\int_{0}^{\frac{T}{2}} f(t) \cdot cos(n \omega t)dt$\\
-  Falls $f(t)$ ungerade ist $(f(-t) = -f(t))$: &\ $\rightarrow a_{n} = 0, b_{n} = \frac{4}{T}\int_{0}^{\frac{T}{2}} f(t) \cdot sin(n \omega t)dt$\\
+  Falls $f(t)$ gerade ist $(f(t) = f(-t))$: &\ $\rightarrow b_{n} = 0, a_{n} = \frac{4}{T}\int\limits_{0}^{\frac{T}{2}} f(t) \cdot cos(n \omega t)dt$\\
+  Falls $f(t)$ ungerade ist $(f(-t) = -f(t))$: &\ $\rightarrow a_{n} = 0, b_{n} = \frac{4}{T}\int\limits_{0}^{\frac{T}{2}} f(t) \cdot sin(n \omega t)dt$\\
 \end{tabular}\\\\
 Beispiele von geraden Funktionen sind $x^2, cos(x)$ und Beispiele ungerader Funktionen sind $x, x^3, sin(x)$.
