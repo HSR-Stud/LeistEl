@@ -1,0 +1,16 @@
+\section{Wechselstromsteller}
+
+\begin{tabu}{|l|l|p{0.3\textwidth}}
+    \cline{1-2}
+    Mittelwert & $U_{R AV} = 0$
+    & \multirow{3}{*}{\includegraphics[width = \linewidth]{./pictures/wechselstromsteller.png}}\\
+    \cline{1-2}
+    Effektivwert & {$\begin{aligned}
+                        U_{R RMS} &= \sqrt{\frac{U_{2m}^2}{\pi}\int\limits_{\alpha}^{\pi}sin^2(\beta) \cdot d\beta} = U_{2m} \cdot \sqrt{\frac{\pi-\alpha}{2\pi}+\frac{sin(2\alpha)}{4\pi}}\\
+                        I_{R RMS} &=  \frac{U_{2m}}{R} \cdot \sqrt{\frac{\pi-\alpha}{2\pi}+\frac{sin(2\alpha)}{4\pi}}
+                    \end{aligned}$
+                   }\\
+    \cline{1-2}
+    Wirkleistung & $P = \frac{U_{R RMS}^2}{R} = \frac{U_{2m}^2}{R} \cdot \left( \frac{\pi-\alpha}{2\pi} + \frac{\sin(2\alpha)}{4\pi}\right) $\\
+    \cline{1-2}
+\end{tabu}
