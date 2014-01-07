@@ -5,7 +5,13 @@
 
 \include{./header/header}
 
-
+\usepackage{multirow}
+\usepackage{longtable}
+\renewcommand{\arraystretch}{2.5}
+\setlength{\abovedisplayskip}{8pt}
+\setlength{\belowdisplayskip}{8pt}
+\setlength{\abovedisplayshortskip}{8pt}
+\setlength{\belowdisplayshortskip}{8pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Mathematische Operatoren %
@@ -13,7 +19,7 @@
 
 \newcommand{\zaehlerBuck}{\frac{1}{i_{Lmax}} \cdot \frac{V_{1}}{R_{1}} - 1   }
 \newcommand{\nennerBuck}{\frac{1}{i_{Lmax}} \cdot \frac{V_{1}}{R_{1}}-e^{\frac{-T_{a}}{\tau}} }
-
+\raggedbottom
 \begin{document}
 
 \input{./sections/allgemeineFormeln}
