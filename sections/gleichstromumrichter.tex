@@ -5,7 +5,7 @@ Ein einfacher Tiefsetzsteller könnte auch mit einem Spannungsteiler bebaut werd
 Die Verlustleistung würde jedoch $P_{V} = R_{1} \cdot I_{1}^2$ betragen.
 
 
-\begin{longtable}{|p{0.1\textwidth}|l|p{0.3\textwidth}}
+\begin{longtabu}{|p{0.1\textwidth}|l|p{0.3\textwidth}}
 	\cline{1-2}
 	\multicolumn{2}{|c|}{\textbf{Grundgleichungen}}
 	& \multirow{3}{*}{\includegraphics[width = \linewidth]{./pictures/buck.png}}\\
@@ -14,7 +14,7 @@ Die Verlustleistung würde jedoch $P_{V} = R_{1} \cdot I_{1}^2$ betragen.
 		& $\begin{aligned}
 			& i_{L} \cdot R + L\dfrac{di_{L}}{dt} = U_1  & t \in [0; T_{e}]\\
 			& i_{L} \cdot R + L\dfrac{di_{L}}{dt} = 0  & t \in [T_{e}; T_{s}]
-		\end{aligned}$ & \\[5mm]
+		\end{aligned}$ & \\
 	\cline{1-2}
 	Stromverlauf (Lösung der DGL)
 		& $i_L = \begin{cases}
@@ -30,4 +30,4 @@ Die Verlustleistung würde jedoch $P_{V} = R_{1} \cdot I_{1}^2$ betragen.
 			\tau &= \frac{L_{1}}{R_{1}}
 		\end{aligned}$ &\\
 	\cline{1-2}
-\end{longtable}
+\end{longtabu}
