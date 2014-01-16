@@ -18,13 +18,14 @@
            
 \subsection{Allgemeine Form}
 Eine periodische Funktion lässt sich durch eine Reihe von Sinus- und Kosinusfunktionen darstellen.
-$$f(t) = \frac{a_{0}}{2}+\sum_{n = 1}^{\infty} (a_{n} \cdot cos(n \omega t)+ b_{n} \cdot sin(n \omega t))$$
+$$f(t) = \frac{a_{0}}{2}+\sum_{k = 1}^{\infty} (a_{k} \cdot cos(k \omega t)+ b_{k} \cdot sin(k \omega t)) = f_{AV} + \sum_{k = 1}^{\infty} c_k \cdot \sin(k\omega t + \varphi_k)$$
 
 Die Koeffizienten der Entwicklung von $f(t)$ sind:\\
 \begin{tabular}{ll}
   $a_{0} = \frac{2}{T}\int\limits_{0}^{T}f(t)dt$ & \\
-  $a_{n} = \frac{2}{T}\int\limits_{0}^{T}f(t) \cdot cos(n \omega t)dt$   &\ $(n = 0,1,2,...)$\\
-  $b_{n} = \frac{2}{T}\int\limits_{0}^{T}f(t) \cdot sin(n \omega t)dt$   &\ $(n = 1,2,3,...)$\\
+  $a_{k} = \frac{2}{T}\int\limits_{0}^{T}f(t) \cdot cos(k \omega t)dt$   &\ $(k = 0,1,2,...)$\\
+  $b_{k} = \frac{2}{T}\int\limits_{0}^{T}f(t) \cdot sin(k \omega t)dt$   &\ $(k = 1,2,3,...)$\\
+  $c_{k} = \sqrt{a_k^2 + b_k^2},\quad \varphi_k = \arctan(\frac{b_k}{a_k})$
 \end{tabular}
 \subsection{Sätze zur Berechnung der Fourierkoeffizienten}
 \subsubsection{Symmetrie}
