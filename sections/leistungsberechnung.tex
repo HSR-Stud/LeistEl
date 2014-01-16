@@ -1,5 +1,5 @@
 \section{Leistungsberechnung}
-\begin{tabular}{|l|l|}
+\begin{tabu}{|l|l|}
   \hline
   Momentane Leistung
   	& $p(t) = u_{R}(t) \cdot i_{R}(t)$\\
@@ -30,7 +30,13 @@
   Leistungsfaktor
   	& $\lambda = \frac{P}{S}$\\
   \hline
-  Welligkeit (der Spannung)
-  	& $w = \frac{U_{RMS\_Oberwellen}}{|U_{AV}|}= \frac{\sqrt{\sum_{k = 1}^{\infty}U_{k}^2}}{|U_{AV}|}$\\
+  Effektivwert Oberwellen
+    & $U_{RMS\_Oberwellen} = \sqrt{U_{RMS}^2 - U_{AV}^2}$\\
   \hline
-\end{tabular}
+  Formfaktor
+    & $F = \frac{U_{RMS}}{\overline{|U|}}$\\
+  \hline
+  Welligkeit (der Spannung)
+  	& $w = \frac{U_{RMS\_Oberwellen}}{|U_{AV}|}= \frac{\sqrt{\sum_{k = 1}^{\infty}U_{k}^2}}{|U_{AV}|} = \sqrt{F^2-1}$\\
+  \hline
+\end{tabu}
