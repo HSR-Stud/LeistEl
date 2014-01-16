@@ -1,4 +1,4 @@
-Zusammenfassung LeistEl bei J. Smaic
+Zusammenfassung LeistEl bei Prof. Dr. Jasmin Smajic
 
 
 
