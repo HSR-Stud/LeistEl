@@ -20,13 +20,31 @@
 Eine periodische Funktion lässt sich durch eine Reihe von Sinus- und Kosinusfunktionen darstellen.
 $$f(t) = \frac{a_{0}}{2}+\sum_{k = 1}^{\infty} (a_{k} \cdot cos(k \omega t)+ b_{k} \cdot sin(k \omega t)) = f_{AV} + \sum_{k = 1}^{\infty} c_k \cdot \sin(k\omega t + \varphi_k)$$
 
-Die Koeffizienten der Entwicklung von $f(t)$ sind:\\
+Die Koeffizienten der Entwicklung von $f(t)$ sind:
+
 \begin{tabular}{ll}
   $a_{0} = \frac{2}{T}\int\limits_{0}^{T}f(t)dt$ & \\
   $a_{k} = \frac{2}{T}\int\limits_{0}^{T}f(t) \cdot cos(k \omega t)dt$   &\ $(k = 0,1,2,...)$\\
   $b_{k} = \frac{2}{T}\int\limits_{0}^{T}f(t) \cdot sin(k \omega t)dt$   &\ $(k = 1,2,3,...)$\\
   $c_{k} = \sqrt{a_k^2 + b_k^2},\quad \varphi_k = \arctan(\frac{b_k}{a_k})$
 \end{tabular}
+
+\subsection{Komplexe Darstellung der Fourierreihen}
+
+$$f(t) = \sum\limits_{k = -\infty}^{\infty} c_k \cdot e^{j k \omega t} \qquad \text{mit} \qquad c_n=\overline{c_{-n}}=\frac{1}{T}\int\limits_0^T{f(t)\cdot e^{-jn\omega t}dt}$$
+
+
+
+\subsubsection{Umrechnungsformeln}
+	$$c_n=\overline{c_{-n}}=\frac{a_n-jb_n}{2} (n=0,1,2,3,\ldots\text{ wobei }b_0=0)\qquad
+      \left.
+      \begin{array}{l} 
+        a_n=2 \cdot \text{Re}(c_n)\\
+        b_n=-2 \cdot \text{Im}(c_n)
+      \end{array}
+        \right\} 
+        \quad
+      (n=0,1,2,3,\ldots, b_0 = 0)$$
 \subsection{Sätze zur Berechnung der Fourierkoeffizienten}
 \subsubsection{Symmetrie}
 \begin{tabular}{ll}

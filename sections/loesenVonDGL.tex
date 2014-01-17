@@ -1,38 +1,55 @@
 
 \section{Lösen von Differentialgleichungen}
-    \subsection{Allgemeine Vorgehensweisen}
-        \subsubsection{Trennung von Variablen / Separation}
-            \begin{tabular}{p{4cm}p{1.5cm}p{10.5cm}}
-                \textbf{Form:} $y' = f(x) g(y)$ &
-                \textbf{Vorgehen:}              &
-                1. DGL umstellen: $\frac{y'}{g(y)} = f(x)$ \\ &&
-                2. Beidseitig nach x integrieren wobei $dx = \frac{dy}{y'}$ \\ &&
-                3. Grenzen anpassen: $\int\limits_{y_0=y(x_0)}^{y} \frac{1}{g(y)} dy =
-                \int\limits_{x}^{x_0}f(x) dx$
-            \end{tabular}
+\subsection{Allgemeine Vorgehensweisen}
+\subsubsection{Trennung von Variablen / Separation}
+
+\begin{tabular}{p{4cm}p{10.5cm}}
+\textbf{Form:} $y' = f(x) g(y)$ &
+\textbf{Vorgehen:}
+\begin{enumerate}
+	\item DGL umstellen: $\frac{y'}{g(y)} = f(x)$
+	\item Beidseitig nach x integrieren wobei $dx = \frac{dy}{y'}$
+	\item Grenzen anpassen: $\int\limits_{y_0=y(x_0)}^{y} \frac{1}{g(y)} dy = \int\limits_{x}^{x_0}f(x) dx$
+\end{enumerate}
+\end{tabular}
             
-        \subsubsection{Lineartermsubstitution}
-            \begin{tabular}{p{4cm}p{1.5cm}p{10.5cm}}
-                \textbf{Form:} $y'=f(ax+by+c)$   &
-                \textbf{Vorgehen:}               &
-                1. Substitution: $z=ax+by+c$ \\ &&
-                3. Einsetzen in $z'=a+bf(z)$\\ &&
-                2. Separation: $\frac{z'}{f(z)} = a + b$ wobei $z_0 = x_0 + y_0$
-            \end{tabular}
+\subsubsection{Lineartermsubstitution}
+
+\begin{tabular}{p{5cm}p{10.5cm}}
+\textbf{Form:} $y'=f(ax+by+c)$   &
+\textbf{Vorgehen:}
+\begin{enumerate}
+	\item Substitution: $z=ax+by+c$
+	\item Einsetzen in $z'=a+bf(z)$
+	\item Separation: $\frac{z'}{f(z)} = a + b$ wobei $z_0 = x_0 + y_0$
+\end{enumerate}
+\end{tabular}
                 
-        \subsubsection{Gleichgradigkeit}
-            \begin{tabular}{p{4cm}p{1.5cm}p{10.5cm}}
-                \textbf{Form:} $y'=f(\frac{y}{x})$ &
-                \textbf{Vorgehen:}                &
-                1. Substitution:\quad $z=\frac{y}{x}$\\ &&
-                2. Einsetzen in $z'=\frac{1}{x}(f(z)-z)$\\ &&
-                3. Separation: $\frac{z'}{f(z)-z} = \frac{1}{x}$ wobei $z_0 = \frac{y_0}{x_0}$ 
-            \end{tabular}
+\subsubsection{Gleichgradigkeit}
+\begin{tabular}{p{4cm}p{10.5cm}}
+\textbf{Form:} $y'=f(\frac{y}{x})$ &
+\textbf{Vorgehen:}
+\begin{enumerate}
+	\item Substitution:\quad $z=\frac{y}{x}$
+	\item Einsetzen in $z'=\frac{1}{x}(f(z)-z)$
+	\item Separation: $\frac{z'}{f(z)-z} = \frac{1}{x}$ wobei $z_0 = \frac{y_0}{x_0}$ 
+\end{enumerate}
+\end{tabular}
             
-    \subsection{Differentialgleichung 1. Ordnung}
-        \subsubsection{konstante Störung f(x) = C}
-            \textbf{1.} Homogene Lösung mit $\mathrm{y_h = 0}$ berechnen\\
-            \textbf{2.} Partikuläre Lösung mit $\mathrm{y_p = C}$ (= Konstante) berechnen, indem zeitlich abhängige Terme der DGL ignoriert werden
-        \subsubsection{sinusförmige Störung f(x) = $\mathrm{\bf U \cdot \sin(\omega t)}$}
-            \textbf{1.} Homogene Lösung mit $\mathrm{y_h = 0}$ berechnen\\
-            \textbf{2.} Partikuläre Lösung mit $\mathrm{y_p = C \cdot \sin(\omega t) + D\cdot \cos(\omega t)}$ berechnen, indem $\mathrm{y_p}$ in DGL eingesetzt wird und mittels Koeffizientenvergleich die Vorfaktoren der Sinus- und der Cosinusschwingung bestimmt werden. Für die Vorfaktoren der Sinus- und Cosinusschwingung je eine Gleichung aufstellen und das Gleichungssystem der beiden Gleichungen lösen.
+\subsection{Differentialgleichung 1. Ordnung}
+    
+\subsubsection{Konstante Störung $f(x) = A$}
+\begin{enumerate}
+	\item Homogene Lösung mit $y_h = 0$ berechnen
+	
+	\item Partikuläre Lösung mit $y_p = B$ (= Konstante) berechnen, indem zeitlich abhängige Terme der DGL ignoriert werden
+\end{enumerate}
+
+\subsubsection{Sinusförmige Störung $f(x) = (A \cdot \cos \omega x + B \cdot \sin \omega x)$}
+\begin{enumerate}
+	\item Homogene Lösung mit $y_h = 0$ berechnen
+	
+	\item Ansatz für Partikuläre Lösung: $y_p = C \cdot \sin(\omega t) + D\cdot \cos(\omega t)$
+	
+	\item $y_p$ in DGL einsetzen, $C$ und $D$ per Koeffizientenvergleich ermitteln
+\end{enumerate}
