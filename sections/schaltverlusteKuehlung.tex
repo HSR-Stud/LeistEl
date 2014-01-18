@@ -2,11 +2,11 @@
 B2C als Beispiel:\\\\
 in einem ersten Schritt muss der Strom durch den Thyristor berechnet werden:\\
 \begin{tabular}{ll}
-  Spitzenwert des Thyristorstromes&\ $I_{Rm} = \frac{U_{2m}}{R}$\\\\
+  Spitzenwert des Thyristorstromes&\ $\hat{I}_{R} = \frac{\hat{U}_{2}}{R}$\\\\
   Mittelwert des Thyristorstromes &\ $I_{T AV} = \frac{1}{2\pi}\int\limits_{\alpha}^{\pi}I_{Rm} \cdot sin(\beta) \cdot d\beta, \beta = \omega t$\\
-  &\ $I_{T AV} = \frac{I_{Rm}}{2\pi} \cdot (1+cos\alpha)$\\\\
+  &\ $I_{T AV} = \frac{\hat{I}_{R}}{2\pi} \cdot (1+cos\alpha)$\\\\
   Effektivwert des Thyristorstromes &\ $I_{T RMS} = \sqrt{\frac{I_{RM}^2}{2\pi}\int\limits_{\alpha}^{\pi}sin^2(\beta)d\beta}$\\
-  &\ $I_{T RMS} = \frac{I_{Rm}}{2}\sqrt{\frac{\pi - \alpha}{\pi}+\frac{sin2\alpha}{2\pi}}$\\\\
+  &\ $I_{T RMS} = \frac{\hat{I}_{R}}{2}\sqrt{\frac{\pi - \alpha}{\pi}+\frac{sin2\alpha}{2\pi}}$\\\\
 \end{tabular}
 
 \begin{figure}[htbp]
